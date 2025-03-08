@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #334155;
+    background-color: #f8f9fc;
+  }
+  
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #c5c5c5;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #9e9e9e;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Animation classes */
+  .fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .slide-in-up {
+    animation: slideInUp 0.4s ease-out;
+  }
+  
+  .pulse {
+    animation: pulse 1.5s ease-in-out infinite;
+  }
+  
+  /* Card hover effects */
+  .card-hover {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Button hover effects */
+  .btn-hover-effect {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .btn-hover-effect::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+  }
+  
+  .btn-hover-effect:hover::after {
+    transform: translateX(100%);
+  }
+  
+  /* Form focus effects */
+  .form-field-focus {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .form-field-focus:focus-within {
+    transform: scale(1.02);
+  }
+  
+  /* Table row hover effects */
+  .table-row-hover {
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .table-row-hover:hover {
+    background-color: rgba(63, 81, 181, 0.04);
+  }
+  
+  /* Toast notification animations */
+  .Toastify__toast {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Toastify__toast--success {
+    background-color: #4caf50;
+  }
+  
+  .Toastify__toast--error {
+    background-color: #f44336;
+  }
+  
+  .Toastify__toast--info {
+    background-color: #2196f3;
+  }
+  
+  .Toastify__toast--warning {
+    background-color: #ff9800;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .responsive-container {
+      padding: 16px;
+    }
+    
+    .responsive-card {
+      padding: 16px;
+    }
+  }
+  
+  /* Page transitions */
+  .page-transition-enter {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .page-transition-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .page-transition-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .page-transition-exit-active {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 300ms, transform 300ms;
+  }
