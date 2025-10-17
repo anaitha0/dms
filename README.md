@@ -1,6 +1,6 @@
 # Document Management System
 
-A responsive React frontend for a document management system with user management functionality.
+AI-powered Document Management System
 <img width="3467" height="1852" alt="image" src="https://github.com/user-attachments/assets/a487b4df-b4cd-4758-ad51-52a27b4c37ba" />
 
 ## Features
