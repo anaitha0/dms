@@ -1,6 +1,7 @@
 # Document Management System
 
 A responsive React frontend for a document management system with user management functionality.
+<img width="3467" height="1852" alt="image" src="https://github.com/user-attachments/assets/a487b4df-b4cd-4758-ad51-52a27b4c37ba" />
 
 ## Features
 
@@ -9,6 +10,7 @@ A responsive React frontend for a document management system with user managemen
 - **Document Management**: View, upload, manage and organize documents with comprehensive filtering and search
 - **Responsive Design**: Works seamlessly across all device sizes
 - **Modern UI**: Beautiful and professional interface with animations and transitions
+<img width="3465" height="1848" alt="image" src="https://github.com/user-attachments/assets/630327bb-6358-4391-81f1-77ab983a3226" />
 
 ## Tech Stack
 
